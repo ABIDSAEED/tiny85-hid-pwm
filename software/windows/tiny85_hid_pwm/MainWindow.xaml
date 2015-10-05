@@ -1,0 +1,9 @@
+﻿<Window x:Class="tiny85_hid_pwm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="83" Width="525">
+    <Grid>
+        <Slider Margin="48,10,10,10" Minimum="0" Maximum="255" SmallChange="1" Name="valueSlider" Thumb.DragCompleted="Thumb_DragCompleted" Value="255" />
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ElementName=valueSlider, Path=Value, StringFormat={}{0:N0}}" VerticalAlignment="Top" Margin="10,13,0,0"/>
+    </Grid>
+</Window>
